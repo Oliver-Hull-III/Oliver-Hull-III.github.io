@@ -23,9 +23,6 @@
 }
 
 
-.vh-100 {
-  height: 100vh !important;
-}
 
 
 .footer {
@@ -45,4 +42,45 @@
 
 .primary-color {
   background-color: slateblue !important;
+}
+
+
+.first-section {
+  height: calc(100vh - 57px);
+}
+
+
+
+.contact-container {
+  background-position: center center;
+  background-repeat: 'no-repeat';
+  background-size: cover;
+}
+
+
+
+
+
+
+.vh-100 {
+  height: 100vh !important;
+}
+
+.opacity-0 {
+  opacity:0!important;
+}
+.opacity-1 {
+  opacity:0.2!important;
+}
+.opacity-2 {
+  opacity:0.4!important;
+}
+.opacity-3 {
+  opacity:0.6!important;
+}
+.opacity-4 {
+  opacity:0.9!important;
+}
+.opacity-5 {
+  opacity:1!important;
 }

@@ -10,7 +10,7 @@ class Contact extends Component {
         email: '',
         contactReason: '',
         message: '',
-        backgroundImage: ''
+        backgroundImage: defaultBackground
     }
     handleSubmit(e) {
         e.preventDefault()
@@ -63,12 +63,12 @@ class Contact extends Component {
             <Form  onSubmit={this.handleSubmit.bind(this)}>
 
             <div className="contact-container" style={{backgroundImage : `url(${this.state.backgroundImage})`}}>
-            <div className = "container h-100">       
+            <div className = "container first-section">       
                     <Row className="h-100">
-                        <Col className="p-5 primary-color rounded my-auto offset-md-2" sm={12} md={8}>
+                        <Col className="p-5 primary-color rounded my-auto offset-md-2 opacity-4" sm={12} md={8}>
                     <FormGroup>
                         <Row>
-                            <Col sm={6}>
+                            <Col sm={6} className="mt-2">
                             <Form.Control   
                                 type="text"
                                 name="name"
@@ -77,7 +77,7 @@ class Contact extends Component {
                                 placeholder="Name"
                             />
                             </Col>
-                            <Col sm={6}>
+                            <Col sm={6} className="mt-2">
                             <Form.Control 
                                 type="email" 
                                 name="email"
