@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
+import './utilities.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
 import About from "./About";
