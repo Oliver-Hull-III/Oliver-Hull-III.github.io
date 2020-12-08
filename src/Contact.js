@@ -63,62 +63,64 @@ class Contact extends Component {
             <Form  onSubmit={this.handleSubmit.bind(this)}>
 
             <div className="contact-container" style={{backgroundImage : `url(${this.state.backgroundImage})`}}>
-            <div className = "container first-section">       
-                    <Row className="h-100">
+                <div className = "container h-100">       
+                    <Row className="h-100 d-flex">
                         <Col className="p-5 primary-color rounded my-auto offset-md-2 opacity-4" sm={12} md={8}>
-                    <FormGroup>
-                        <Row>
-                            <Col sm={6} className="mt-2">
-                            <Form.Control   
-                                type="text"
-                                name="name"
-                                value={this.state.name}
-                                onChange={this.handleChange.bind(this, 'name')}
-                                placeholder="Name"
-                            />
-                            </Col>
-                            <Col sm={6} className="mt-2">
-                            <Form.Control 
-                                type="email" 
-                                name="email"
-                                placeholder="Email" 
-                                value={this.state.email}
-                                onChange={this.handleChange.bind(this, 'email')}/>
-                            </Col>
-                        </Row>
-                    </FormGroup>
-                    <FormGroup>
-                        <Form.Control 
-                            as="select"
-                            name="contactReason"
-                            className="text-primary"
-                            value={this.state.contactReason}
-                            onChange={this.setBackground.bind(this, 'contactReason')}
-                        >
-                            <option>Reason For Contacting</option>
-                            <option>Request Painting</option>
-                            <option>Animal Care Inquiry</option>
-                            <option>Paint Ur Pup</option>
-                        </Form.Control>
-                    </FormGroup>
-                    <FormGroup>
-                        <Form.Control 
-                            rows={4} 
-                            as="textarea" 
-                            placeholder="Type your message here" 
-                            name="message"
-                            value={this.state.message}
-                            onChange={this.handleChange.bind(this, 'message')}
-                        />
-                    </FormGroup>
-                    <FormGroup>
-                        <Button variant="primary" type="submit" id="send-email-button"> 
-                            Submit
-                        </Button>
-                    </FormGroup>
-                    </Col>
-            </Row>
-            </div>
+                        <h1 className="mb-4">Contact</h1>
+
+                            <FormGroup>
+                                <Row>
+                                    <Col sm={6} className="mt-2">
+                                    <Form.Control   
+                                        type="text"
+                                        name="name"
+                                        value={this.state.name}
+                                        onChange={this.handleChange.bind(this, 'name')}
+                                        placeholder="Name"
+                                    />
+                                    </Col>
+                                    <Col sm={6} className="mt-2">
+                                    <Form.Control 
+                                        type="email" 
+                                        name="email"
+                                        placeholder="Email" 
+                                        value={this.state.email}
+                                        onChange={this.handleChange.bind(this, 'email')}/>
+                                    </Col>
+                                </Row>
+                            </FormGroup>
+                            <FormGroup>
+                                <Form.Control 
+                                    as="select"
+                                    name="contactReason"
+                                    className="text-primary"
+                                    value={this.state.contactReason}
+                                    onChange={this.setBackground.bind(this, 'contactReason')}
+                                >
+                                    <option>Reason For Contacting</option>
+                                    <option>Request Painting</option>
+                                    <option>Animal Care Inquiry</option>
+                                    <option>Paint Ur Pup</option>
+                                </Form.Control>
+                            </FormGroup>
+                            <FormGroup>
+                                <Form.Control 
+                                    rows={4} 
+                                    as="textarea" 
+                                    placeholder="Type your message here" 
+                                    name="message"
+                                    value={this.state.message}
+                                    onChange={this.handleChange.bind(this, 'message')}
+                                />
+                            </FormGroup>
+                            <FormGroup>
+                                <Button variant="primary" type="submit" id="send-email-button"> 
+                                    Submit
+                                </Button>
+                            </FormGroup>
+                        </Col>
+                    </Row>
+                </div>
             </div>
             </Form>
 

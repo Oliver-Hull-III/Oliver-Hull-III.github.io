@@ -46,7 +46,7 @@
 
 
 .main-component {
-  min-height: calc(100vh - 57px);
+  height: calc(100vh - 57px);
 }
 
 
@@ -56,6 +56,8 @@
   background-repeat: 'no-repeat';
   background-size: cover;
   min-height: 600px;
+  height: calc(100vh - 57px);
+
 }
 
 

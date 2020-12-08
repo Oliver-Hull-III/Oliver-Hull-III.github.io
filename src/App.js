@@ -17,11 +17,11 @@ class App extends Component  {
     return(
       <div>
         <Navbar/>
+        <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/art" component={Art} />
         <Route path="/contact" component={Contact} />
         <Route path="/animal-care" component={AnimalCare} />
-        <Route path="/*" component={Home} />
         <Footer/>
       </div>
   );
