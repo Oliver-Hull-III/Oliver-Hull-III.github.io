@@ -45,19 +45,26 @@
 }
 
 
-.main-component {
-  height: calc(100vh - 57px);
-}
-
-
-
 .contact-container {
   background-position: center center;
   background-repeat: 'no-repeat';
   background-size: cover;
-  min-height: 600px;
-  height: calc(100vh - 57px);
+  min-height: max(600px, calc(100vh - 57px)) !important;
+}
 
+
+
+
+
+
+
+
+
+
+
+.portrait-img {
+  -webkit-filter: drop-shadow(5px 5px 5px);
+  filter: drop-shadow(5px 5px 5px);
 }
 
 
