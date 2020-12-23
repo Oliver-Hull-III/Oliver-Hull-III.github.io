@@ -4,10 +4,10 @@ import Portrait from './images/portrait.png';
 import aboutBackground from './images/about-background.jpg';
 
 const About = () => (
-  <div className="contact-container vw-100" style={{backgroundImage:`url(${aboutBackground})`}}>
+  <div className="main-container vw-100" style={{backgroundImage:`url(${aboutBackground})`}}>
     <Container>
-      <Row className="h-100" >
-        <Col sm={12} lg ={6} className="h-100 align-self-center">
+      <Row>
+        <Col sm={12} lg ={6} className="h-100">
           <div className="card">
             <div className="card-body">
               <h1>About Me</h1>

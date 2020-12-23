@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Form, Button, Row, Col, FormGroup, Container } from 'react-bootstrap';
+import { Form, Button, Row, Col, FormGroup } from 'react-bootstrap';
 import * as emailjs from 'emailjs-com'
 import defaultBackground from './llama.jpg';
 import pypBackground from './dog.jpg';
@@ -60,12 +60,11 @@ class Contact extends Component {
     render() {
         return(
 
-            <Form  onSubmit={this.handleSubmit.bind(this)}>
+        <Form  onSubmit={this.handleSubmit.bind(this)}>
 
-            <div className="contact-container" style={{backgroundImage : `url(${this.state.backgroundImage})`}}>
-                <Container className="h-100">       
-                    <Row className="h-100 d-flex">
-                        <Col className="p-5 primary-color rounded my-auto offset-md-2 opacity-4" sm={12} md={8}>
+            <div className="main-container contact-container" style={{backgroundImage : `url(${this.state.backgroundImage})`}}>
+
+                        <Col className="primary-color rounded my-auto offset-md-2 offset-lg-3 p-sm-3 p-md-5 opacity-4 contact-card" sm={12} md={8} lg={6}>
                         <h1 className="mb-4">Contact</h1>
 
                             <FormGroup>
@@ -105,7 +104,7 @@ class Contact extends Component {
                             </FormGroup>
                             <FormGroup>
                                 <Form.Control 
-                                    rows={4} 
+                                    rows={6} 
                                     as="textarea" 
                                     placeholder="Type your message here" 
                                     name="message"
@@ -119,8 +118,7 @@ class Contact extends Component {
                                 </Button>
                             </FormGroup>
                         </Col>
-                    </Row>
-                </Container>
+
             </div>
             </Form>
 
