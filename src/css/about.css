@@ -1,0 +1,14 @@
+.about-section {
+    display: flex;
+    align-items: center;
+    max-height: 2000px;
+}
+
+#portrait {
+    align-self: flex-end;
+}
+
+#portrait img {
+    object-fit: cover;
+    width: 100%;
+}

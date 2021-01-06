@@ -62,9 +62,9 @@ class Contact extends Component {
 
         <Form  onSubmit={this.handleSubmit.bind(this)}>
 
-            <div className="main-container contact-container" style={{backgroundImage : `url(${this.state.backgroundImage})`}}>
+            <div className="first-container bg-img-full contact-container" style={{backgroundImage : `url(${this.state.backgroundImage})`}}>
 
-                        <Col className="primary-color rounded my-auto offset-md-2 offset-lg-3 p-sm-3 p-md-5 opacity-4 contact-card" sm={12} md={8} lg={6}>
+                        <Col className="primary-color rounded my-auto offset-md-2 offset-lg-3 p-3 p-md-5 opacity-4 contact-card" sm={12} md={8} lg={6}>
                         <h1 className="mb-4">Contact</h1>
 
                             <FormGroup>

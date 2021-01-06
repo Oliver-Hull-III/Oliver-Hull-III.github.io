@@ -45,11 +45,18 @@
 }
 
 
-.main-container {
+.bg-img-full {
   background-position: center center;
   background-repeat: 'no-repeat';
   background-size: cover;
-  min-height: max(600px, calc(100vh - 57px)) !important;
+}
+
+.first-container {
+  height: max(600px, calc(100vh - 74px));
+}
+
+.second-container {
+  height: max(600px, 100vh);
 }
 
 
@@ -59,43 +66,4 @@
 
 .contact-card {
   align-self: center;
-
 }
-
-
-
-
-
-
-
-
-
-.portrait-img {
-  -webkit-filter: drop-shadow(5px 5px 5px);
-  filter: drop-shadow(5px 5px 5px);
-}
-
-
-#about-me h1 {
-  font-size: 4rem;
-  line-height: 1.2em;
-  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
-  letter-spacing: -0.07em;
-}
-
-#about-me-intro {
-  font-size: 2rem;
-  color: #666666;
-  line-height: 1.3em;
-  margin-bottom: 0.7em;
-  width: 100%;
-  clear: both;
-}
-
-#about-me-main {
-  font-size: 2rem;
-}
-
-
-
-

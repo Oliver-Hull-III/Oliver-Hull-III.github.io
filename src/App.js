@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import './App.css';
-import './utilities.css';
+import './css/App.css';
+import './css/utilities.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./Home";
 import About from "./About";
@@ -15,7 +15,7 @@ import Footer from './Components/Footer';
 class App extends Component  {
   render (){
     return(
-      <div>
+      <div id = "outermost-div">
         <Navbar/>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
