@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Col, Row, Card} from 'react-bootstrap';
+import {Col, Card} from 'react-bootstrap';
 import './css/about.css';
 import aboutBackground from './images/about-bg-first-lg.png';
 import portrait from './images/portrait.png';
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const About = () => (
     <div className = "about-section first-container bg-img-full" style={{backgroundImage:`url(${aboutBackground})`}}>
       <Col xl={4} lg={6} md={7} id="portrait" className="d-none d-md-block">
-        <img src={portrait} />
+        <img src={portrait} alt="a picture of nectar"/>
       </Col>
       <Col lg={4} md={5} sm={12} className="offset-lg-1 offset-xl-3 offset-xs-0">
         <Card>
