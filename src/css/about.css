@@ -4,6 +4,34 @@
     max-height: 2000px;
 }
 
+@media screen and (max-width: 768px) {
+    .about-section {
+        background-position: bottom center !important;
+        background-image: url("../images/about-bg-sm.png");
+    }
+    #about-text {
+        align-self: start;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .card-body {
+        padding: 10px;
+    }
+    .about-section {
+        min-height: 700px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about-section {
+        background-image: url("../images/about-bg-lg.png");
+    }
+}
+
+
+
+
 #portrait {
     align-self: flex-end;
 }
