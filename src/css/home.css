@@ -1,0 +1,9 @@
+#home-first{
+    background-image: url("../images/llama.jpg");
+    background-position: 10% 0%;
+}
+
+@media screen and (max-width: 768px) {
+    background-position: 10% 0%;
+
+}

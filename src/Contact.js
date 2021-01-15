@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 import { Form, Button, Row, Col, FormGroup } from 'react-bootstrap';
 import * as emailjs from 'emailjs-com'
-import defaultBackground from './llama.jpg';
-import pypBackground from './dog.jpg';
+
+import defaultBackground from './images/llama.jpg';
+import pypBackground from './images/pyp-bg.jpg';
+import animalCareBackground from './images/animalcare-bg.jpg';
+import requestPaintingBackground from './images/requestpainting-bg.jpg';
+
 
 class Contact extends Component {
     state = {
@@ -52,6 +56,10 @@ class Contact extends Component {
         switch(value){
             case 'Paint Ur Pup':
                 return pypBackground;
+            case 'Animal Care Inquiry':
+                return animalCareBackground;
+            case 'Request Painting':
+                return requestPaintingBackground;
             default: 
                 return defaultBackground;
         } 

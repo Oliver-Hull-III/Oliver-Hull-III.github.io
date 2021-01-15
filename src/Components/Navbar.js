@@ -9,7 +9,9 @@ const Navigation = () => (
 
     <Navbar collapseOnSelect expand="lg" className="primary-color" variant='dark'>
     <Navbar.Brand>
-      <img src={Logo} width="50" height="50" alt="Kaleigh Llama"/>
+        <Link to="/" className="nav-link">
+            <img src={Logo} width="50" height="50" alt="Kaleigh Llama"/>
+        </Link>
     </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
