@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { AiFillInstagram, AiFillFacebook, AiFillTwitterSquare } from 'react-icons/ai';
@@ -17,10 +18,10 @@ const Navigation = () => (
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
         <Nav.Item>
-            <Link to="/art" className="nav-link">Art</Link>
+            <HashLink to="/#art" className="nav-link">Art</HashLink>
         </Nav.Item>
         <Nav.Item>
-            <Link to="/animal-care" className="nav-link">Animal Care</Link>
+            <HashLink to="/#animalcare" className="nav-link">Animal Care</HashLink>
         </Nav.Item>
         <Nav.Item>
             <Link to="/about" className="nav-link">About Me</Link>
