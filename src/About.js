@@ -14,7 +14,7 @@ const About = () => (
             <h1>About Me</h1>
           </Card.Header>
           <Card.Body>
-            <p>I'm an artist based in Oregon.  After graduating from FIT in 2017, I moved here to pursue a career as an Animal Caretaker. Since then I have watched over animals small and large (including llamas of course). I am also in the process of learning Canine Massage Therapy.</p>
+            <p>I'm an artist based in Oregon.  After attending FIT in 2017, I moved here to pursue a career as an Animal Caretaker. Since then I have watched over animals small and large (including llamas of course). I am also in the process of learning Canine Massage Therapy.</p>
 
             <p>My two passions were intertwined when I started Paint Your Pup, a series of pieces featuring my client's/friends dogs. If you have a pup you'd like painted you can request one <Link to="/contact">here</Link> </p>
           </Card.Body>

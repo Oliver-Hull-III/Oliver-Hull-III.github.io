@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { AiFillInstagram, AiFillFacebook, AiFillTwitterSquare } from 'react-icons/ai';
+import { AiFillInstagram, AiFillFacebook, AiFillYoutube } from 'react-icons/ai';
 import Logo from '../images/alpaca-svgrepo-com.svg';
 
 const Navigation = () => (
@@ -38,7 +38,7 @@ const Navigation = () => (
             <a href="https://www.facebook.com/kale.acevedo.3" className="nav-link"><AiFillFacebook size={30}/></a>
         </Nav.Item>
         <Nav.Item>
-            <a href="https://www.twitter.com/kaleigh.llama/" className="nav-link"><AiFillTwitterSquare size={30}/></a>
+            <a href="https://www.youtube.com/channel/UCquh_XpItd3LPjVvvw_xFYw" className="nav-link"><AiFillYoutube size={30}/></a>
         </Nav.Item>
     </Nav>
   </Navbar.Collapse>
