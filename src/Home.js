@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {Container, Col, Row, Button, Card } from 'react-bootstrap';
 import './css/home.css';
 import Gallery from 'react-photo-gallery';
