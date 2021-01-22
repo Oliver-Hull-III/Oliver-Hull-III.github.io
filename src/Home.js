@@ -114,7 +114,7 @@ function Home () {
 
 
       <Container fluid className = "first-container bg-img-full p-0 d-flex" id="home">
-        <h1 className="ml-md-5" style={{"alignSelf":"center", "fontSize" : "100px"}}>Kaleigh <br/> Llama</h1>
+        <img src="/images/kaleigh_llama.png" alt="Kaleigh Llama" id="name-img"/>
       </Container>
       <Container fluid className="primary-color" id="art">
 
