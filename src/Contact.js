@@ -14,7 +14,8 @@ class Contact extends Component {
         email: '',
         contactReason: '',
         message: '',
-        backgroundImage: defaultBackground
+        backgroundImage: defaultBackground,
+        placeholder: 'Enter message here'
     }
     handleSubmit(e) {
         e.preventDefault()
@@ -49,7 +50,8 @@ class Contact extends Component {
 
     setBackground = (param, e) => {
         this.handleChange(param, e);
-        this.setState({backgroundImage : this.getBackgroundImage(e.target.value) })
+        this.setState({backgroundImage : this.getBackgroundImage(e.target.value),
+                        placeholder: this.getPlaceholder(e.target.value)})
     }
 
     getBackgroundImage(value){
@@ -62,6 +64,18 @@ class Contact extends Component {
                 return requestPaintingBackground;
             default: 
                 return defaultBackground;
+        } 
+    }
+
+    getPlaceholder(value){
+        switch(value){
+            case 'Animal Care Inquiry':
+                return 'Please include type/number of animals, your location, and dates you need care';
+            case 'Paint Ur Pup':
+            case 'Request Painting':
+                return 'Include a link to the image you want painted if possible';
+            default: 
+                return 'Enter message here';
         } 
     }
 
@@ -114,7 +128,7 @@ class Contact extends Component {
                                 <Form.Control 
                                     rows={6} 
                                     as="textarea" 
-                                    placeholder="Type your message here" 
+                                    placeholder={this.state.placeholder} 
                                     name="message"
                                     value={this.state.message}
                                     onChange={this.handleChange.bind(this, 'message')}
