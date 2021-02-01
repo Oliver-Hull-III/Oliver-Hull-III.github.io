@@ -51,6 +51,8 @@
   background-position: center center;
   background-repeat: 'no-repeat';
   background-size: cover;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
 }
 
 .first-container {
@@ -70,19 +72,7 @@
   align-self: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Loading screen */
 
 .loading-overlay { 
   width: 100vw;
@@ -143,3 +133,10 @@
     transform: scale(1.0);
   }
 }
+
+
+
+
+
+
+

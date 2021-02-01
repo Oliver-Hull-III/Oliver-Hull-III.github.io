@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Route } from 'react-router-dom';
 import './css/App.css';
 import './css/utilities.css';
@@ -12,32 +12,46 @@ import AnimalCare from './AnimalCare';
 import Footer from './Components/Footer';
 
 
+
+
+export function cacheImage(src) {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => resolve(src);
+    img.onerror = () => Promise.reject("couldn't load image");
+    img.src = src;
+  })
+};
+
 function App(){
+
 
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const imgs = [
-      '/images/kaleigh_llama.png',
-      '/images/llama.jpg'
+      'https://drive.google.com/uc?id=1YMS6ZZ1raoUIEMVP2s4DJ6nXPwH5Yfq5', //about-bg-lg.png
+      'https://drive.google.com/uc?id=1UyEmh3LveWv85QpFjf8EhWjW-2tsEw0_', //about-bg-sm.png
+      'https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ', //llama-lg.png
+      'https://drive.google.com/uc?id=12gRvFlX4_5528Vy8ARpNefAY-Gkc0Bbk', //pyp-bg.png
+      'https://drive.google.com/uc?id=1wMxoC8zz9qk-4sPL3_fgLhg2AJ-oNzgV', //request-painting-bg.png
+      'https://drive.google.com/uc?id=1YxeMHsKb8vnScer8QU9nUUnFbQLh_lEK', //kaleigh-llama.png
+      'https://drive.google.com/uc?id=1EZA3rWKF1hkV2Alb0dypDKfUzbTwQHMb',  //portrait.png
+      'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2'   //animal-care.png
+
     ];
 
     cacheImages(imgs);
   }, []);
 
+
+
+  
   const cacheImages = async (srcArray) => {
-    const promises = await srcArray.map((src) => {
 
-      document.body.classList.add("no-scroll");
+    document.body.classList.add("no-scroll");
 
-      return new Promise(function(resolve, reject) {
-        const img = new Image();
-
-        img.src = src;
-        img.onload = resolve();
-        img.onerror = reject();
-      });
-    });
+    const promises = await srcArray.map((src) => cacheImage(src));
 
     await Promise.all(promises);
 
@@ -45,17 +59,19 @@ function App(){
     setIsLoading(false);
   }
 
+
   return(
     <div id = "outermost-div">
-        {isLoading ? 
-        <div className="loading-overlay">
-         <div className="spinner">
-          <div className="bounce1"></div>
-          <div className="bounce2"></div>
-          <div className="bounce3"></div>
+      {isLoading ? 
+      <div className="loading-overlay">
+        <div className="spinner">
+          <div className="bounce1"/>
+          <div className="bounce2"/>
+          <div className="bounce3"/>
         </div>
-        </div> 
+      </div> 
       : null}
+
       <Navbar/>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
@@ -67,5 +83,6 @@ function App(){
   );
   
 }
+
 
 export default App;

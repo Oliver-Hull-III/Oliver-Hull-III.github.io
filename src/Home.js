@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Container, Col, Row, Button, Card } from 'react-bootstrap';
 import './css/home.css';
 import Gallery from 'react-photo-gallery';
 
 
 function Home () {
+
+ 
+
   const paintYourPup = [
     {
       src: 'images/paintyourpup/pyp_1x1_1.jpg',
@@ -111,10 +114,8 @@ function Home () {
   return (
     <Container fluid>
 
-
-
-      <Container fluid className = "first-container bg-img-full p-0 d-flex" id="home">
-        <img src="/images/kaleigh_llama.png" alt="Kaleigh Llama" id="name-img"/>
+      <Container fluid className = "first-container bg-img-full p-0 d-flex" style = {{backgroundImage : 'url("https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ")'}}>
+        <img src="https://drive.google.com/uc?id=1YxeMHsKb8vnScer8QU9nUUnFbQLh_lEK" alt="Kaleigh Llama" id="name-img"/>
       </Container>
       <Container fluid className="primary-color" id="art">
 

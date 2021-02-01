@@ -2,11 +2,6 @@ import React, {Component} from 'react';
 import { Form, Button, Row, Col, FormGroup } from 'react-bootstrap';
 import * as emailjs from 'emailjs-com'
 
-import defaultBackground from './images/llama.jpg';
-import pypBackground from './images/pyp-bg.jpg';
-import animalCareBackground from './images/animalcare-bg.jpg';
-import requestPaintingBackground from './images/requestpainting-bg.jpg';
-
 
 class Contact extends Component {
     state = {
@@ -14,7 +9,7 @@ class Contact extends Component {
         email: '',
         contactReason: '',
         message: '',
-        backgroundImage: defaultBackground,
+        backgroundImage: this.getBackgroundImage(null),
         placeholder: 'Enter message here'
     }
     handleSubmit(e) {
@@ -57,16 +52,15 @@ class Contact extends Component {
     getBackgroundImage(value){
         switch(value){
             case 'Paint Ur Pup':
-                return pypBackground;
+                return 'https://drive.google.com/uc?id=12gRvFlX4_5528Vy8ARpNefAY-Gkc0Bbk';
             case 'Animal Care Inquiry':
-                return animalCareBackground;
+                return 'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2';
             case 'Request Painting':
-                return requestPaintingBackground;
+                return 'https://drive.google.com/uc?id=1wMxoC8zz9qk-4sPL3_fgLhg2AJ-oNzgV';
             default: 
-                return defaultBackground;
+                return 'https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ';
         } 
     }
-
     getPlaceholder(value){
         switch(value){
             case 'Animal Care Inquiry':
