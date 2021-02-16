@@ -18,7 +18,7 @@ export function cacheImage(src) {
   return new Promise(resolve => {
     const img = new Image();
     img.onload = () => resolve(src);
-    img.onerror = () => Promise.reject("couldn't load image");
+    img.onerror = () => Promise.reject("couldn't load image:" + src);
     img.src = src;
   })
 };
