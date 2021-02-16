@@ -14,14 +14,7 @@ import Footer from './Components/Footer';
 
 
 
-export function cacheImage(src) {
-  return new Promise(resolve => {
-    const img = new Image();
-    img.onload = () => resolve(src);
-    img.onerror = () => Promise.reject("couldn't load image");
-    img.src = src;
-  })
-};
+
 
 function App(){
 
@@ -37,17 +30,31 @@ function App(){
       'https://drive.google.com/uc?id=1wMxoC8zz9qk-4sPL3_fgLhg2AJ-oNzgV', //request-painting-bg.png
       'https://drive.google.com/uc?id=1YxeMHsKb8vnScer8QU9nUUnFbQLh_lEK', //kaleigh-llama.png
       'https://drive.google.com/uc?id=1EZA3rWKF1hkV2Alb0dypDKfUzbTwQHMb',  //portrait.png
-      'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2'   //animal-care.png
+      'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2',   //animal-care.png
+      
 
+      //Contact pages
+      'https://drive.google.com/uc?id=12gRvFlX4_5528Vy8ARpNefAY-Gkc0Bbk',
+      'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2',
+      'https://drive.google.com/uc?id=1wMxoC8zz9qk-4sPL3_fgLhg2AJ-oNzgV',
+      'https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ'
     ];
 
     cacheImages(imgs);
   }, []);
 
-
-
+  const cacheImage = (src) => {
+    return new Promise(resolve => {
+      const img = new Image();
+      img.onload = () => resolve(src);
+      img.onerror = () => Promise.reject("couldn't load image: " + src);
+      img.src = src;
+    })
+  };
   
   const cacheImages = async (srcArray) => {
+
+    setIsLoading(true);
 
     document.body.classList.add("no-scroll");
 
@@ -58,6 +65,8 @@ function App(){
     document.body.classList.remove("no-scroll");
     setIsLoading(false);
   }
+
+
 
 
   return(

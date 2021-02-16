@@ -1,12 +1,11 @@
-#home {
-    background-image: url("https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ");
-}
+
 html {
     scroll-behavior: smooth;
   }
 #home {
     height: 65.3vw;
     min-height: 600px;
+    background-color: #6a5acd;
 }
 @media screen and (min-width: 768px) {
 
