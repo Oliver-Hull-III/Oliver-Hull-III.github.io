@@ -30,21 +30,14 @@ function App(){
 
   useEffect(() => {
     const imgs = [
-      'https://drive.google.com/uc?id=1YMS6ZZ1raoUIEMVP2s4DJ6nXPwH5Yfq5', //about-bg-lg.png
-      'https://drive.google.com/uc?id=1UyEmh3LveWv85QpFjf8EhWjW-2tsEw0_', //about-bg-sm.png
-      'https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ', //llama-lg.png
-      'https://drive.google.com/uc?id=12gRvFlX4_5528Vy8ARpNefAY-Gkc0Bbk', //pyp-bg.png
-      'https://drive.google.com/uc?id=1wMxoC8zz9qk-4sPL3_fgLhg2AJ-oNzgV', //request-painting-bg.png
-      'https://drive.google.com/uc?id=1YxeMHsKb8vnScer8QU9nUUnFbQLh_lEK', //kaleigh-llama.png
-      'https://drive.google.com/uc?id=1EZA3rWKF1hkV2Alb0dypDKfUzbTwQHMb',  //portrait.png
-      'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2',   //animal-care.png
-      
-
-      //Contact pages
-      'https://drive.google.com/uc?id=12gRvFlX4_5528Vy8ARpNefAY-Gkc0Bbk',
-      'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2',
-      'https://drive.google.com/uc?id=1wMxoC8zz9qk-4sPL3_fgLhg2AJ-oNzgV',
-      'https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ'
+      'https://u.cubeupload.com/kaleighllama/aboutbglg.png', //about-bg-lg.png
+      'https://u.cubeupload.com/kaleighllama/aboutbgsm.png', //about-bg-sm.png
+      'https://u.cubeupload.com/kaleighllama/llama.jpg', //llama-lg.png
+      'https://u.cubeupload.com/kaleighllama/pypbg.jpg', //pyp-bg.png
+      'https://u.cubeupload.com/kaleighllama/requestpaintingbg.jpg', //request-painting-bg.png
+      'https://u.cubeupload.com/kaleighllama/kaleighllama.png', //kaleigh-llama.png
+      'https://u.cubeupload.com/kaleighllama/portrait.png',  //portrait.png
+      'https://u.cubeupload.com/kaleighllama/animalcarebg.jpg',   //animal-care.png
     ];
 
     cacheImages(imgs);

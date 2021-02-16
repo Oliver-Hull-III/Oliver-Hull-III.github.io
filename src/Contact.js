@@ -52,13 +52,13 @@ class Contact extends Component {
     getBackgroundImage(value){
         switch(value){
             case 'Paint Ur Pup':
-                return 'https://drive.google.com/uc?id=12gRvFlX4_5528Vy8ARpNefAY-Gkc0Bbk';
+                return 'https://u.cubeupload.com/kaleighllama/pypbg.jpg';
             case 'Animal Care Inquiry':
-                return 'https://drive.google.com/uc?id=11S4IMTgYDy7hcEMVVYZdY-QHrBLxjQj2';
+                return 'https://u.cubeupload.com/kaleighllama/animalcarebg.jpg';
             case 'Request Painting':
-                return 'https://drive.google.com/uc?id=1wMxoC8zz9qk-4sPL3_fgLhg2AJ-oNzgV';
+                return 'https://u.cubeupload.com/kaleighllama/requestpaintingbg.jpg';
             default: 
-                return 'https://drive.google.com/uc?id=1OKtGxBf8ibdThpn5FjpjbwF275JN-tIQ';
+                return 'https://u.cubeupload.com/kaleighllama/llama.jpg';
         } 
     }
     getPlaceholder(value){

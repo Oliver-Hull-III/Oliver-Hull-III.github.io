@@ -7,7 +7,7 @@
 @media screen and (max-width: 768px) {
     .about-section {
         background-position: bottom center !important;
-        background-image: url("https://drive.google.com/uc?id=1UyEmh3LveWv85QpFjf8EhWjW-2tsEw0_");
+        background-image: url("https://u.cubeupload.com/kaleighllama/aboutbgsm.png");
     }
     #about-text {
         align-self: start;
@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 768px) {
     .about-section {
-        background-image: url("https://drive.google.com/uc?id=1YMS6ZZ1raoUIEMVP2s4DJ6nXPwH5Yfq5");
+        background-image: url("https://u.cubeupload.com/kaleighllama/aboutbglg.png");
     }
 }
 

@@ -1,12 +1,11 @@
 import React from 'react';
 import {Col, Card} from 'react-bootstrap';
 import './css/about.css';
-import portrait from './images/portrait.png';
 import { Link } from 'react-router-dom';
 const About = () => (
     <div className = "about-section first-container bg-img-full">
       <Col xl={4} lg={6} md={7} id="portrait" className="d-none d-md-block">
-        <img src={portrait} alt="a pictur of nectar"/>
+        <img src="https://u.cubeupload.com/kaleighllama/portrait.png" alt="a pictur of nectar"/>
       </Col>
       <Col lg={4} md={5} sm={12} className="offset-lg-1 offset-xl-3 offset-xs-0 mt-2 mt-md-0" id ="about-text">
         <Card >
