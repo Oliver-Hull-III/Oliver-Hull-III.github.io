@@ -14,7 +14,14 @@ import Footer from './Components/Footer';
 
 
 
-
+export function cacheImage(src) {
+  return new Promise(resolve => {
+    const img = new Image();
+    img.onload = () => resolve(src);
+    img.onerror = () => Promise.reject("couldn't load image");
+    img.src = src;
+  })
+};
 
 function App(){
 
@@ -43,18 +50,10 @@ function App(){
     cacheImages(imgs);
   }, []);
 
-  const cacheImage = (src) => {
-    return new Promise(resolve => {
-      const img = new Image();
-      img.onload = () => resolve(src);
-      img.onerror = () => Promise.reject("couldn't load image: " + src);
-      img.src = src;
-    })
-  };
+
+
   
   const cacheImages = async (srcArray) => {
-
-    setIsLoading(true);
 
     document.body.classList.add("no-scroll");
 
@@ -65,8 +64,6 @@ function App(){
     document.body.classList.remove("no-scroll");
     setIsLoading(false);
   }
-
-
 
 
   return(
