@@ -14,8 +14,7 @@ function Home () {
         <img src="https://u.cubeupload.com/kaleighllama/kaleighllama.png" alt="Kaleigh Llama" id="name-img"/>
       </Container>
       <Art/>
-      <AnimalCare/>
-    
+          
       <Button id="go-top-button" href="#home">^</Button>
     </Container>
   );
