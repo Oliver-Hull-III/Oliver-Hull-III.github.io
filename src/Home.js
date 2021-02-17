@@ -2,7 +2,6 @@ import React from 'react';
 import {Container, Button } from 'react-bootstrap';
 import './css/home.css';
 import Art from './Art';
-import AnimalCare from './AnimalCare';
 
 
 function Home () {
@@ -14,7 +13,7 @@ function Home () {
         <img src="https://u.cubeupload.com/kaleighllama/kaleighllama.png" alt="Kaleigh Llama" id="name-img"/>
       </Container>
       <Art/>
-          
+
       <Button id="go-top-button" href="#home">^</Button>
     </Container>
   );
