@@ -1,5 +1,6 @@
 import React from 'react'; 
 import { Col, Card, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Gallery from 'react-photo-gallery';
 
 
@@ -120,7 +121,7 @@ const Art = () => (
             <Card> 
                 <Card.Header>
                 <h2>Paint ur Pup</h2>
-                <p className="lead">This is a series of commisions I've been doing for owners of the animals I take care of, as well as my friends and family. you can request one <a href="/contact">here</a></p>
+                <p className="lead">This is a series of commisions I've been doing for owners of the animals I take care of, as well as my friends and family. You can request one <Link to="/contact">here</Link></p>
                 </Card.Header>
                 <Card.Body>
                 <Gallery photos={paintYourPup} direction={"column"}/>
@@ -133,7 +134,7 @@ const Art = () => (
             <Card> 
                 <Card.Header> 
                 <h2>Songs for Friends</h2>
-                <p className="lead">I took a song chosen by one of my friends and used as inspiration for each of these works.</p>
+                <p className="lead">For each of these works, I had a friend choose a song and I used it as inspiration.</p>
                 </Card.Header>
                 <Card.Body>
                 <Gallery photos={songsForFriends} direction={"column"}/>
